@@ -1,0 +1,26 @@
+@import url(http://fonts.googleapis.com/css?family=Mouse+Memoirs);
+@import url(http://fonts.googleapis.com/css?family=Ranchers);
+* {margin:0; padding:0; animation-duration:2s;}
+#win {display:none;border:10px solid red;top:80px;position:absolute;background-color:white;left:30%;text-align:center;padding:10px;font:200% "Ranchers";border-radius:1em}
+a {text-decoration:None}
+h1 {font-family: "Ranchers"; text-align:center;}
+#grid {margin:0 auto;max-width:500px;}
+.row {display: table-row;}
+.row:nth-child(even){background-color:rgba(255,240,240,0.5);}
+.content{display: inline-block; min-height: 3em;text-align: center; vertical-align: middle; padding:2px;
+overflow:hidden;font-family:"Mouse Memoirs";}
+.cell {display: table-cell; text-align:center;width:20%}
+.cell:nth-child(even){background-color:rgba(240,255,240,0.5);}
+.heardIt {opacity: 0;color:red; background-color:transparent;animation-name:fade,slideout;}
+.fade {animation-name:fade;opacity:0;}
+.freeSpace {color:green}
+footer {color: #CCC; font:75% arial;display:block;position:absolute;bottom:0;text-align:center;}
+footer a {color:#CCF;}
+@keyframes fade {
+    from {opacity:1}
+    to {opacity:0}
+}
+@keyframes slideout {
+    from{font-size:100%}
+    to{font-size:0;}
+}
