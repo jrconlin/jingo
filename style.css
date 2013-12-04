@@ -9,7 +9,7 @@ h1 {font-family: "Ranchers"; text-align:center;}
 .row:nth-child(even){background-color:rgba(255,240,240,0.5);}
 .content{display: inline-block; min-height: 3em;text-align: center; vertical-align: middle; padding:2px;
 overflow:hidden;font-family:"Mouse Memoirs";}
-.cell {display: table-cell; text-align:center;width:20%}
+.cell {display: table-cell; text-align:center;width:20%;box-shadow: inset 3px 2px 11px 1px #ccc;}
 .cell:nth-child(even){background-color:rgba(240,255,240,0.5);}
 .heardIt {opacity: 0;color:red; background-color:transparent;animation-name:fade,slideout;}
 .fade {animation-name:fade;opacity:0;}
@@ -31,8 +31,10 @@ footer a {color:#CCF;}
 @media screen and (orientation:portrait) {
 #grid {max-width:500px; max-height: auto;}
 .content {size: 100%;}
+h1 {padding-bottom: 0}
 }
 
-@media screen and (orientation:landscape) and (min-width:600px) {
+@media screen and (orientation:landscape) and (min-width:768px) {
+h1 {padding-bottom: 3em;}
 .content {font-size: 150%; }
 }
